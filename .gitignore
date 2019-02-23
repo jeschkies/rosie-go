@@ -1,0 +1,9 @@
+# Executable
+rtest
+# Files created during setup for the librosie Go client
+setvars
+# Emacs backup files
+*~
+
+
+
