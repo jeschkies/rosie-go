@@ -10,8 +10,9 @@ jobs:
           run: |
             git clone https://gitlab.com/rosie-pattern-language/rosie.git
             cd rosie
-            apt install -y libreadline6 libreadline6-dev libbsd libbsd-dev
+            sudo apt install -y libreadline6 libreadline6-dev libbsd libbsd-dev
             make
             make install
+            cd ..
         - name: Build Rosie Go
           run: go run rtest.go
