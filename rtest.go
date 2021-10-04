@@ -9,11 +9,13 @@
 
 package main
 
-import "rosie"
+import (
+	"fmt"
+	"os"
+	"runtime"
 
-import "fmt"
-import "os"
-import "runtime"
+	rosie "gitlab.com/rosie-community/clients/go/pkg"
+)
 
 var errs = 0			// counter
 
