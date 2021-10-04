@@ -10,6 +10,7 @@ jobs:
           run: |
             git clone https://gitlab.com/rosie-pattern-language/rosie.git
             cd rosie
+            make
             make install
         - name: Build Rosie Go
           run: go run rtest.go
