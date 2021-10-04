@@ -14,7 +14,7 @@ import (
 	"os"
 	"runtime"
 
-	rosie "gitlab.com/rosie-community/clients/go/pkg"
+	rosie "github.com/jeschkies/rosie-go/pkg"
 )
 
 var errs = 0			// counter
