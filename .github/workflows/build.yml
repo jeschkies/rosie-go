@@ -6,4 +6,10 @@ jobs:
       steps:
         - uses: actions/checkout@v2
         - uses: actions/setup-go@v2
-        - run: go run rtest.go
+        - name: Install Rosie
+          run: |
+            git clone https://gitlab.com/rosie-pattern-language/rosie.git
+            cd rosie
+            make install
+        - name: Build Rosie Go
+          run: go run rtest.go
